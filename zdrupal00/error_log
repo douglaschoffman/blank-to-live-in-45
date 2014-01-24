@@ -1,0 +1,10 @@
+[23-Jan-2014 16:54:00 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/thelakew/public_html/zdrupal00/includes/database/database.inc:2168
+Stack trace:
+#0 /home/thelakew/public_html/zdrupal00/includes/database/database.inc(2168): PDOStatement->execute(Array)
+#1 /home/thelakew/public_html/zdrupal00/includes/database/database.inc(680): DatabaseStatementBase->execute(Array, Array)
+#2 /home/thelakew/public_html/zdrupal00/includes/database/database.inc(2347): DatabaseConnection->query('SELECT expire, ...', Array, Array)
+#3 /home/thelakew/public_html/zdrupal00/includes/lock.inc(167): db_query('SELECT expire, ...', Array)
+#4 /home/thelakew/public_html/zdrupal00/includes/lock.inc(146): lock_may_be_available('schema:runtime:...')
+#5 /home/thelakew/public_html/zdrupal00/includes/bootstrap.inc(424): lock_acquire('schema:runtime:...')
+#6 /home/thelakew/public_html/zdrupal00/includes/bootstrap.inc(446): DrupalCacheArray->set(Array)
+#7 [internal function]: DrupalCacheArray- in /home/thelakew/public_html/zdrupal00/includes/database/database.inc on line 2168
